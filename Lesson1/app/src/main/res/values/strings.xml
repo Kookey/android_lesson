@@ -3,4 +3,6 @@
     <string name="question_text">Constantinople is the largest city in Turkey.</string>
     <string name="true_btn">True</string>
     <string name="false_btn">False</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
 </resources>
