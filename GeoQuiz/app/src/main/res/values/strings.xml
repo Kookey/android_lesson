@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="question_text">Question</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="prev_button">Prev</string>
+    <string name="next_button">Next</string>
+    <string name="question_oceans">Oceans</string>
+    <string name="question_mideast">question_mideast</string>
+    <string name="question_africa">question_africa</string>
+    <string name="question_americas">question_americas</string>
+    <string name="question_asia">question_asia</string>
+    <string name="waring_text_view">Waring</string>
+    <string name="show_answer_button">ShowAnswer</string>
+    <string name="corrent_toast">Corrent</string>
+    <string name="incorrent_toast">Incorrent</string>
+    <string name="judgment_toast">偷看答案了你</string>
+    <string name="app_api_level">app_api_level</string>
+</resources>
