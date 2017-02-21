@@ -1,7 +1,7 @@
 package com.lemo.com.lesson3;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -11,6 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+
+    private static final String KEY_INDEX =  "index";
 
     private Button trueBtn;
     private Button falseBtn;
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null){
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX,0);
+        }
         setContentView(R.layout.activity_main);
         trueBtn = (Button) findViewById(R.id.btn_true);
         falseBtn = (Button) findViewById(R.id.btn_false);
@@ -103,5 +108,16 @@ public class MainActivity extends AppCompatActivity {
             messageId = R.string.incorrect;
         }
         Toast.makeText(MainActivity.this,messageId,Toast.LENGTH_LONG).show();
+    }
+
+    /**
+     *
+     * onSaveInstanceState 在onPause,onStop,onDestory 方法之前调用
+     * onSaveInstanceState 中如果要保存对象，被保存的对象必须实现Serializable
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(KEY_INDEX,mCurrentIndex);
     }
 }
