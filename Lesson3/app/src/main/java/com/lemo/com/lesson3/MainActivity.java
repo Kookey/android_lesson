@@ -2,6 +2,7 @@ package com.lemo.com.lesson3;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i(TAG, "onClick: nextBtn");
                 mCurrentIndex = (mCurrentIndex+1)%mQuestionBank.length;
                 updateQuestion();
             }
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         preBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i(TAG, "onClick: preBtn");
                 if (mCurrentIndex==0){
                     mCurrentIndex  = mQuestionBank.length;
                 }
