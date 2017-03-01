@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lesson6</string>
+
+    <string name="lesson6_play">Play</string>
+    <string name="lesson6_stop">Stop</string>
+    <string name="lesson6_description">Neil Armstrong stepping onto the moon</string>
+    <string name="lesson6_pause">Pause</string>
+</resources>

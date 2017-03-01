@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">月球你好</string>
+  <string name="lesson6_play">启动</string>
+  <string name="lesson6_stop">停止</string>
+  <string name="lesson6_description">尼尔·阿姆斯特朗踏上月球</string>
+</resources>
